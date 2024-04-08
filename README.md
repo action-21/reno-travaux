@@ -12,7 +12,7 @@ La littérature utilise majoritairement la notion de **postes de travaux** pour 
 >
 >L'étude des six postes de travaux de rénovation énergétique suivants : l'isolation des murs, l'isolation des planchers bas, l'isolation de la toiture, le remplacement des menuiseries extérieures, la ventilation, la production de chauffage et d'eau chaude sanitaire ainsi que les interfaces associées.
 
-En croisant cette base de travail avec les répertoires de travaux identifiées, une première arborescence de travaux a été réalisée.
+En croisant cette base de travail avec les répertoires de travaux identifiés, une première arborescence de travaux a été réalisée.
 
 - Chauffage et eau chaude sanitaire
     - Chaudières
@@ -38,19 +38,19 @@ En croisant cette base de travail avec les répertoires de travaux identifiées,
 
 Inspirée de [publicodes](https://github.com/publicodes/publicodes), la codification utilisée pour catégoriser les travaux de rénovation énergétique utilise un format textuel `tags . valeur`. Cette approche présente plusieurs avantages :
 
-- Les clés étrangères implémentées par les producteurs de données métiers sont lisibles et compréhensibles. Une clé étrangère `chauffage et eau chaude sanitaire . système solaire . système solaire combiné` traduit davantage son objet métier qu'une clé alphanumérique.
+- Les clés étrangères implémentées par les producteurs de données sont lisibles et compréhensibles. Une clé étrangère `chauffage et eau chaude sanitaire . système solaire . système solaire combiné` traduit davantage son objet métier qu'une clé alphanumérique.
 
 - La codification est immutable par essence : un système solaire combiné sera toujours un système solaire et relèvera toujours de travaux sur le chauffage et l'eau chaude sanitaire. De nouvelles catégories peuvent être ajoutées, d'autres dépréciées, mais une valeur associée à un système de tags à un instant t sera toujours cohérente.
 
 - Le Self-Referencing (l'association d'une liaison d'une ligne d'une table vers une autre ligne de la même table) est géré nativement par la concaténation des tags.
 
-- Le coût supplémentaire pour les producteurs de données lié à l'intégration d'une clé étrangère textuelle peut être résolue par la création d'une table opendata ad hoc (abstraction). 
+- Le coût supplémentaire pour les producteurs de données lié à l'intégration d'une clé étrangère textuelle peut être réduit par la création d'une table open data ad hoc. 
 
 - L'utilisation d'une ressource textuelle comme clé étrangère permet d'exploiter les modèles de langage afin d'enrichir les données métiers.
 
 #### Ventilation des travaux de rénovation énergétique
 
-Une ventilation des travaux de rénovation énergétique par tags est proposée dans le fichier data/base_travaux.csv.
+Une ventilation des travaux de rénovation énergétique par tags est proposée dans le fichier base_travaux.csv.
 
 ## 🔎 Sources de données
 
