@@ -2,7 +2,7 @@
 
 Un open data des travaux de rénovation énergétique de l'habitat.
 
-## Méthodologie
+## ⚙️ Méthodologie
 
 #### Catégorisation des travaux de rénovation énergétique
 
